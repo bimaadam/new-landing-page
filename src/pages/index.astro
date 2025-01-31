@@ -6,7 +6,6 @@ import Counter from '../components/Counter.astro'
 import ContentMedia from '../components/ContentMedia.astro'
 import { Accordion, AccordionItem } from 'accessible-astro-components'
 import Pricing from '../components/Pricing.astro'
-// import { Pricing } from '../components/Pricing.astro'
 ---
 
 <DefaultLayout title="Home">
@@ -15,53 +14,52 @@ import Pricing from '../components/Pricing.astro'
     <div class="container">
       <h2 class="mb-16 text-6xl">Features</h2>
       <div class="grid grid-cols-1 gap-12 md:grid-cols-2 lg:grid-cols-3">
+        <Feature icon="mdi:react" title="React.js">
+          Leverage the power of React to build dynamic, efficient, and interactive user interfaces with a smooth developer experience.
+        </Feature>
         <Feature icon="mdi:tailwind" title="Tailwind CSS">
-          Use the power of Tailwind to greatly improve your productivity and enhance your developer workflow.
+          Tailwind CSS helps you quickly style your website with utility-first classes, enhancing both your productivity and design workflow.
         </Feature>
-        <Feature icon="mdi:wheelchair-accessibility" title="a11y Components">
-          17 components and counting, all tried and tested for the most optimal accessible experience for your visitors.
+        <Feature icon="mdi:nodejs" title="Node.js">
+          Node.js enables you to run JavaScript server-side, providing a scalable and high-performance backend for your web applications.
         </Feature>
-        <Feature icon="mdi:looks" title="Prettier">
-          Less worry about formatting your code, let the Astro Prettier integration do the heavy lifting.
+        <Feature icon="mdi:npm" title="npm Packages">
+          With npm, you can easily manage your dependencies, install libraries, and keep your project up to date.
         </Feature>
         <Feature icon="mdi:eslint" title="ESLint">
-          Lint your code with strict a11y settings to ensure you stay on track with the WCAG standards.
+          ESLint ensures your code is clean and consistent, with rules to maintain high-quality JavaScript while avoiding errors.
         </Feature>
-        <Feature icon="mdi:book-open-page-variant" title="Blog">
-          This theme comes with a fully integrated blog, dynamic pages and SEO optimization.
+        <Feature icon="mdi:webpack" title="Webpack">
+          Webpack allows you to bundle your JavaScript, CSS, and other assets for optimized performance and faster load times.
         </Feature>
-        <Feature icon="mdi:language-markdown" title="Markdown & MDX">
-          Easily use .md and .mdx pages to build your websites or use it with Netlify CMS.
+        <Feature icon="mdi:git" title="Version Control with Git">
+          Git helps you manage and track changes to your code, making it easy to collaborate with teammates and maintain project history.
         </Feature>
-        <Feature icon="mdi:theme-light-dark" title="Dark mode">
-          Fully integrated Dark mode gives your users the choice for their favorite viewing mode.
-        </Feature>
-        <Feature icon="mdi:cog" title="Design System">
-          The theme offers some very handy utilities to help you build your website faster.
+        <Feature icon="mdi:docker" title="Docker">
+          Docker helps you containerize your applications for seamless development, testing, and deployment across different environments.
         </Feature>
         <Feature icon="mdi:lighthouse" title="Lighthouse Scores">
-          Excellent lighthouse scores means your website will load faster and get better SEO rankings.
-        </Feature>
+          With great Lighthouse scores, you can ensure that your website performs well in terms of speed, SEO, and accessibility.
+        </Feature>        
       </div>
     </div>
   </section>
   <ContentMedia imgSrc="/accessible-components.webp">
-    <h2>Accessible Components</h2>
+    <h2>Proven Accessible Components</h2>
     <p class="text-2xl">
-      This theme provides plenty of tried and tested Accessible Astro Components. Some are native to this theme and a
-      lot of others are integrated using a <a href="https://github.com/bimaadam"
-        >separate package</a
-      >. They'll get you up and running in building an accessible solution for your visitors.
+      This theme offers a wide range of proven Astro accessibility components. Some are native to this theme, while others 
+      are integrated through a <a href="https://github.com/bimaadam">separate package</a>. These components will help you 
+      quickly build an accessible and user-friendly solution for your website visitors.
     </p>
   </ContentMedia>
   <ContentMedia imgSrc="/wcag-compliant.webp" reverseImg={true}>
     <h2>WCAG 2.2 AA Compliant</h2>
     <p class="text-2xl">
-      Using semantic HTML, landmarks, skip links, screen reader friendly content, aria-labels, keyboard accessible
-      navigation and components, clear outlines and tab indicators and the right color contrast, you're more certain of
-      reaching WCAG AA compliance.
+      By using semantic HTML, landmarks, skip links, screen reader-friendly content, aria-labels, keyboard-accessible 
+      navigation and components, clear tab indicators, and proper color contrast, you can be more confident that your website 
+      meets WCAG AA standards for better accessibility and broader audience reach.
     </p>
-  </ContentMedia>
+  </ContentMedia>  
   <section class="my-64">
     <div class="container grid grid-cols-1 gap-12 md:grid-cols-2">
       <div class="flex flex-col items-start gap-4">

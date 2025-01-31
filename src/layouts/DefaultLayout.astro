@@ -7,7 +7,7 @@ import Footer from '../components/Footer.astro'
 
 const {
   title = 'RINBIM',
-  description = 'A starter project with accessibility features using Astro static site builder. Contains accessible landmarks, skip links, a dark mode color scheme, better focus outline and keyboard menu navigation.',
+  description = 'RINBIM Website – A modern and accessible Astro starter template. Includes semantic landmarks, skip links, dark mode, enhanced focus outlines, and keyboard-friendly navigation for an inclusive web experience.',
   url,
   image = '/social-preview-image.png',
   author = 'Bima Adam',
@@ -28,7 +28,7 @@ const {
       description={description.substring(0, 100)}
       url={Astro.site
         ? `${Astro.site}/${title.toLowerCase().replaceAll(' ', '-')}`
-        : `https://accessible-astro.dev/${title.toLowerCase().replaceAll(' ', '-')}`}
+        : `https://start.bimaadamrin.my.id/${title.toLowerCase().replaceAll(' ', '-')}`}
       image={image}
       author={author}
     />

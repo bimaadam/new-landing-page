@@ -4,15 +4,27 @@ import { Icon } from 'astro-icon/components'
 const { src = '/roket.png' } = Astro.props
 ---
 
-<section class="hero my-24">
-  <div class="container">
+<section class="hero my-24 relative">
+  <!-- Background Image -->
+  <img 
+    src="/public/bg.jpg" 
+    alt="Background" 
+    class="absolute opacity-35 w-full h-full object-cover" 
+  />
+  
+  <div class="container relative z-10">
     <div class="grid grid-cols-1 items-center gap-24 lg:grid-cols-2">
       <div class="flex flex-col items-center gap-8 md:items-start">
         <h1 class="text-center text-6xl md:text-left lg:text-8xl">
           <slot><span class="text-gradient">RINBIM</span> Start Your Technology</slot>
         </h1>
         <div class="flex flex-col gap-3 min-[500px]:flex-row">
-          <a class="button has-icon" target="_blank" rel="norefferer" href="https://github.com/bimaadam/">
+          <a 
+            class="button has-icon" 
+            target="_blank" 
+            rel="norefferer" 
+            href="https://github.com/bimaadam/"
+          >
             <Icon name="ion:star-outline" />
             Star on GitHub
           </a>
@@ -27,10 +39,16 @@ const { src = '/roket.png' } = Astro.props
           </a>
         </div>
       </div>
-      <img class="hidden lg:block" src={src} alt="" decoding="async" />
+      <img 
+        class="hidden lg:block" 
+        src={src} 
+        alt="Preview Image" 
+        decoding="async" 
+      />
     </div>
   </div>
 </section>
+
 
 <style lang="scss">
   .text-gradient {
